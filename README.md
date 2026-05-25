@@ -174,13 +174,3 @@ La combinación de Fibonacci y números primos permite comprender aplicaciones r
 Además, el proyecto integra tecnologías modernas como HTML, CSS y JavaScript para crear una experiencia interactiva y visualmente atractiva.
 
 ---
-
-# Captura del Proyecto
-
-Agregar aquí una imagen de la página principal del proyecto.
-
----
-
-# Licencia
-
-Proyecto educativo desarrollado con fines académicos.
