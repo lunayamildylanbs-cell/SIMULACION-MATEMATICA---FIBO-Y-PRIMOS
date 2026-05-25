@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matemáticas que Resuelven Problemas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+      <div class="badge">
+        DESAFÍO WEB · FIBONACCI Y NÚMEROS PRIMOS
+      </div>
+
+      <h1>
+        Matemáticas que resuelven problemas
+      </h1>
+
+      <p class="hero-subtitle">
+        Aplicación de la Serie de Fibonacci y los Números Primos
+        en problemas del mundo real utilizando HTML, CSS y JavaScript.
+      </p>
+
+      <div class="hero-info">
+        <span>Por: Yamil Dylan Luna Quispe</span>
+        <span>•</span>
+        <span>Proyecto Web Interactivo</span>
+        <span>•</span>
+        <span>2026</span>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+
+  <main class="contenedor">
+
+    <!-- INTRODUCCIÓN -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">01</span>
+        <h2>Introducción</h2>
+      </div>
+
+      <div class="card">
+        <p>
+          Las matemáticas no solamente existen en libros o ejercicios académicos.
+          También se utilizan en problemas reales relacionados con seguridad informática,
+          crecimiento de poblaciones, economía, diseño natural y análisis computacional.
+        </p>
+
+        <p>
+          En este proyecto se desarrolló una página web interactiva utilizando
+          <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong>,
+          donde se aplican dos conceptos matemáticos importantes:
+        </p>
+
+        <div class="info-grid">
+
+          <div class="info-box">
+            <h3>Serie de Fibonacci</h3>
+            <p>
+              Utilizada para modelar patrones de crecimiento progresivo,
+              organización natural y proyecciones matemáticas.
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h3>Números Primos</h3>
+            <p>
+              Utilizados en seguridad informática, criptografía,
+              generación de claves y validación de códigos.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTEXTO -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">02</span>
+        <h2>Contexto del Problema</h2>
+      </div>
+
+      <div class="card">
+
+        <h3>Fibonacci en ahorro progresivo</h3>
+
+        <p>
+          Una persona desea crear un sistema de ahorro donde cada mes
+          el depósito aumente siguiendo la secuencia de Fibonacci.
+          Este tipo de crecimiento progresivo permite observar cómo
+          pequeñas cantidades pueden aumentar significativamente con el tiempo.
+        </p>
+
+        <div class="tabla-simple">
+          <div class="fila encabezado">
+            <div>Mes</div>
+            <div>Ahorro</div>
+          </div>
+
+          <div class="fila">
+            <div>1</div>
+            <div>Bs. 1</div>
+          </div>
+
+          <div class="fila">
+            <div>2</div>
+            <div>Bs. 1</div>
+          </div>
+
+          <div class="fila">
+            <div>3</div>
+            <div>Bs. 2</div>
+          </div>
+
+          <div class="fila">
+            <div>4</div>
+            <div>Bs. 3</div>
+          </div>
+
+          <div class="fila">
+            <div>5</div>
+            <div>Bs. 5</div>
+          </div>
+
+          <div class="fila">
+            <div>6</div>
+            <div>Bs. 8</div>
+          </div>
+        </div>
+
+        <hr>
+
+        <h3>Números primos en seguridad informática</h3>
+
+        <p>
+          Los números primos son fundamentales en la criptografía moderna.
+          Muchos sistemas de seguridad digital utilizan operaciones matemáticas
+          basadas en números primos para proteger información.
+        </p>
+
+        <p>
+          En este proyecto se implementa un verificador de números primos,
+          donde el usuario puede ingresar un código numérico y el sistema
+          determinará si el número es primo o no.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ALGORITMOS -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">03</span>
+        <h2>Explicación de los Algoritmos</h2>
+      </div>
+
+      <div class="card">
+
+        <h3>Algoritmo de Fibonacci</h3>
+
+        <p>
+          La secuencia Fibonacci se genera sumando los dos números anteriores.
+          El algoritmo utiliza variables simples y ciclos repetitivos.
+        </p>
+
+        <div class="codigo">
+<pre>
+let a = 0;
+let b = 1;
+let c;
+
+for (let i = 1; i <= meses; i++) {
+   c = a + b;
+   a = b;
+   b = c;
+}
+</pre>
+        </div>
+
+        <h3>Algoritmo de números primos</h3>
+
+        <p>
+          Un número primo solamente puede dividirse exactamente entre 1
+          y sí mismo. El algoritmo verifica cuántos divisores tiene el número.
+        </p>
+
+        <div class="codigo">
+<pre>
+let contador = 0;
+
+for (let i = 1; i <= numero; i++) {
+
+   if (numero % i == 0) {
+      contador++;
+   }
+
+}
+
+if (contador == 2) {
+   // El número es primo
+}
+</pre>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FIBONACCI -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">04</span>
+        <h2>Simulador de Fibonacci</h2>
+      </div>
+
+      <div class="card simulador-card">
+
+        <div class="simulador-info">
+          <h3>Crecimiento de ahorro progresivo</h3>
+
+          <p>
+            Ingresa la cantidad de meses para calcular cuánto dinero
+            se ahorraría utilizando la secuencia Fibonacci.
+          </p>
+        </div>
+
+        <form class="formulario">
+
+          <label for="meses">
+            Cantidad de meses
+          </label>
+
+          <input
+            type="number"
+            id="meses"
+            placeholder="Ejemplo: 8"
+            min="1"
+          >
+
+          <button
+            type="button"
+            id="btnFibonacci"
+          >
+            Calcular Fibonacci
+          </button>
+
+        </form>
+
+        <div id="resultadoFibonacci" class="resultado">
+          Esperando datos...
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRIMOS -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">05</span>
+        <h2>Verificador de Números Primos</h2>
+      </div>
+
+      <div class="card simulador-card">
+
+        <div class="simulador-info">
+          <h3>Validación básica de seguridad</h3>
+
+          <p>
+            Ingresa un número para verificar si puede considerarse
+            un número primo.
+          </p>
+        </div>
+
+        <form class="formulario">
+
+          <label for="numeroPrimo">
+            Número a verificar
+          </label>
+
+          <input
+            type="number"
+            id="numeroPrimo"
+            placeholder="Ejemplo: 17"
+            min="1"
+          >
+
+          <button
+            type="button"
+            id="btnPrimo"
+          >
+            Verificar Número
+          </button>
+
+        </form>
+
+        <div id="resultadoPrimo" class="resultado">
+          Esperando datos...
+        </div>
+
+      </div>
+    </section>
+
+    <!-- COMBINADO -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">06</span>
+        <h2>Fibonacci y Primos Combinados</h2>
+      </div>
+
+      <div class="card simulador-card">
+
+        <div class="simulador-info">
+          <h3>Detección de números Fibonacci que también son primos</h3>
+
+          <p>
+            Este simulador genera una secuencia Fibonacci y detecta
+            cuáles valores son números primos.
+          </p>
+        </div>
+
+        <form class="formulario">
+
+          <label for="cantidad">
+            Cantidad de términos
+          </label>
+
+          <input
+            type="number"
+            id="cantidad"
+            placeholder="Ejemplo: 10"
+            min="1"
+          >
+
+          <button
+            type="button"
+            id="btnCombinado"
+          >
+            Generar Secuencia
+          </button>
+
+        </form>
+
+        <div id="resultadoCombinado" class="resultado">
+          Esperando datos...
+        </div>
+
+      </div>
+    </section>
+
+    <!-- IMPORTANCIA -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">07</span>
+        <h2>Importancia en el Mundo Real</h2>
+      </div>
+
+      <div class="card">
+
+        <div class="importancia-grid">
+
+          <div class="importancia-box">
+            <h3>Criptografía</h3>
+            <p>
+              Los números primos son utilizados en sistemas
+              de seguridad digital y cifrado de información.
+            </p>
+          </div>
+
+          <div class="importancia-box">
+            <h3>Economía</h3>
+            <p>
+              Fibonacci puede modelar crecimientos progresivos
+              y proyecciones financieras.
+            </p>
+          </div>
+
+          <div class="importancia-box">
+            <h3>Naturaleza</h3>
+            <p>
+              La secuencia Fibonacci aparece en flores,
+              hojas, semillas y patrones naturales.
+            </p>
+          </div>
+
+          <div class="importancia-box">
+            <h3>Computación</h3>
+            <p>
+              Los algoritmos matemáticos ayudan a resolver
+              problemas complejos de manera eficiente.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONCLUSIÓN -->
+
+    <section class="seccion">
+      <div class="section-top">
+        <span class="section-number">08</span>
+        <h2>Conclusión</h2>
+      </div>
+
+      <div class="card">
+        <p>
+          Este proyecto demuestra cómo conceptos matemáticos como
+          Fibonacci y los números primos tienen aplicaciones reales
+          en informática, seguridad y análisis de crecimiento.
+        </p>
+
+        <p>
+          Además de aplicar lógica matemática, el proyecto también
+          integra tecnologías web modernas utilizando:
+        </p>
+
+        <ul class="lista">
+          <li>HTML para la estructura</li>
+          <li>CSS para el diseño responsivo</li>
+          <li>JavaScript para la lógica interactiva</li>
+          <li>document.getElementById() para manejar los elementos</li>
+        </ul>
+
+      </div>
+    </section>
+
+ <!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <div class="footer-box">
+      <h3>Proyecto Matemático</h3>
+
+      <p>
+        Aplicación web interactiva desarrollada
+        utilizando HTML, CSS y JavaScript.
+      </p>
+
+      <p>
+        El proyecto aplica algoritmos de Fibonacci
+        y números primos para resolver problemas
+        relacionados con crecimiento, ahorro
+        y seguridad informática.
+      </p>
+    </div>
+
+    <div class="footer-box">
+      <h3>Tecnologías</h3>
+
+      <p>• HTML5</p>
+      <p>• CSS3 Responsivo</p>
+      <p>• JavaScript</p>
+      <p>• document.getElementById()</p>
+    </div>
+
+  <div class="footer-bottom">
+
+    <div class="footer-copy">
+      © 2026 · <strong>Yamil Dylan Luna Quispe</strong>
+    </div>
+
+    <div class="footer-frase">
+      Matemáticas que Resuelven Problemas
+    </div>
+
+  </div>
+
+</footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
