@@ -1,7 +1,8 @@
-# Matemáticas que Resuelven Problemas  
-## Fibonacci y Números Primos en la Vida Real
+# KATARI/SOLVE
 
-Proyecto web interactivo desarrollado con HTML, CSS y JavaScript, aplicando la serie de Fibonacci y los números primos para resolver problemas relacionados con el mundo real.
+## Matemáticas que resuelven problemas: Fibonacci y Números Primos en la vida real
+
+Proyecto web interactivo desarrollado con HTML, CSS y JavaScript aplicando la Serie de Fibonacci y los Números Primos en problemas inspirados en situaciones del mundo real.
 
 ---
 
@@ -11,166 +12,202 @@ Proyecto web interactivo desarrollado con HTML, CSS y JavaScript, aplicando la s
 
 ---
 
-# Descripción del Proyecto
+# Descripción del proyecto
 
-Este proyecto fue desarrollado como parte del desafío:
+Este proyecto consiste en una página web interactiva donde se aplican algoritmos matemáticos utilizando JavaScript para resolver distintos problemas relacionados con:
 
-> “Matemáticas que resuelven problemas: Fibonacci y Números Primos en la vida real”.
+* Serie de Fibonacci
+* Números Primos
+* Seguridad informática
+* Crecimiento progresivo
+* Análisis matemático computacional
 
-La aplicación web permite al usuario interactuar con distintos simuladores matemáticos relacionados con:
-
-- Serie de Fibonacci
-- Números primos
-- Seguridad informática
-- Ahorro progresivo
-- Crecimiento matemático
-
-La página utiliza formularios interactivos, JavaScript y diseño responsivo para mostrar resultados dinámicamente.
+La página permite al usuario ingresar datos mediante formularios, ejecutar simulaciones y visualizar resultados directamente en pantalla.
 
 ---
 
-# Problemas Aplicados al Mundo Real
+# Tecnologías utilizadas
 
-## Fibonacci en ahorro progresivo
+* HTML5
+* CSS3
+* JavaScript
+* GitHub
+* GitHub Pages
 
-Simula un sistema de ahorro donde cada depósito aumenta siguiendo la secuencia Fibonacci.
+---
 
-Ejemplo:
+# Características principales
+
+* Diseño moderno y responsivo
+* Navegación interactiva
+* Formularios dinámicos
+* Resultados visuales en pantalla
+* Uso obligatorio de `document.getElementById()`
+* Algoritmos matemáticos funcionales
+* Separación correcta de HTML, CSS y JavaScript
+
+---
+
+# Problemas implementados
+
+## 1. Sistema de ahorro inteligente
+
+Aplicación de la Serie de Fibonacci para simular un plan de ahorro progresivo.
+
+El usuario ingresa una cantidad de meses y el sistema calcula automáticamente el crecimiento del ahorro siguiendo la secuencia Fibonacci.
+
+### Ejemplo
 
 | Mes | Ahorro |
-|---|---|
-| 1 | Bs. 1 |
-| 2 | Bs. 1 |
-| 3 | Bs. 2 |
-| 4 | Bs. 3 |
-| 5 | Bs. 5 |
-| 6 | Bs. 8 |
+| --- | ------ |
+| 1   | Bs. 1  |
+| 2   | Bs. 1  |
+| 3   | Bs. 2  |
+| 4   | Bs. 3  |
+| 5   | Bs. 5  |
 
 ---
 
-## Números primos en seguridad informática
+## 2. Sistema de seguridad digital
 
-Verifica si un número puede considerarse primo para utilizarse como código básico de seguridad.
+Aplicación de números primos para verificar si un código puede considerarse matemáticamente seguro.
 
-Los números primos son utilizados en:
+El usuario ingresa un número y el sistema determina automáticamente si es primo o no.
 
-- Criptografía
-- Validación de códigos
-- Protección de información
-- Sistemas de cifrado
+### Ejemplo
 
----
-
-## Fibonacci y primos combinados
-
-Genera una secuencia Fibonacci y detecta cuáles valores también son números primos.
+* Código: 17 → Seguro
+* Código: 21 → Inseguro
+* Código: 97 → Altamente seguro
 
 ---
 
-# Tecnologías Utilizadas
+## 3. Análisis combinado
 
-| Tecnología | Uso |
-|---|---|
-| HTML5 | Estructura de la página |
-| CSS3 | Diseño visual y responsivo |
-| JavaScript | Lógica matemática |
-| Git y GitHub | Control de versiones |
-| Netlify / GitHub Pages | Publicación web |
+Generación automática de una secuencia Fibonacci y detección de cuáles valores también son números primos.
+
+El sistema analiza cada término individualmente y muestra los resultados en pantalla.
 
 ---
 
-# Funcionalidades
+# Explicación de los algoritmos
 
-- Simulador de Fibonacci
-- Verificador de números primos
-- Detección de Fibonacci primos
-- Formularios interactivos
-- Resultados dinámicos
-- Diseño responsivo
-- Uso de `document.getElementById()`
+## Algoritmo de Fibonacci
 
----
+La Serie de Fibonacci se genera sumando los dos números anteriores de la secuencia.
 
-# Algoritmo Fibonacci
+Ejemplo:
 
 ```javascript
 let a = 0;
 let b = 1;
 let c;
 
-for (let i = 1; i <= meses; i++) {
+for(let i = 1; i <= meses; i++){
+
    c = a + b;
    a = b;
    b = c;
+
 }
 ```
 
-# Algoritmo de números primos
+---
+
+## Algoritmo de números primos
+
+Un número primo solamente puede dividirse exactamente entre 1 y sí mismo.
+
+Ejemplo:
 
 ```javascript
 let contador = 0;
 
-for (let i = 1; i <= numero; i++) {
+for(let i = 1; i <= numero; i++){
 
-   if (numero % i == 0) {
+   if(numero % i == 0){
       contador++;
    }
 
 }
 
-if (contador == 2) {
-   console.log("Es primo");
+if(contador == 2){
+
+   // Es primo
+
 }
 ```
 
-# Estructura del Proyecto
+---
+
+# Estructura del proyecto
 
 ```text
-desafio-fibonacci-primos/
+SIMULACION MATEMATICA-FIBO Y PRIMOS/
 │
 ├── index.html
-├── estilos.css
-├── script.js
+├── css/
+│   └── estilos.css
+├── js/
+│   └── script.js
 └── README.md
 ```
 
-# Diseño Responsivo
+---
 
-La página fue desarrollada utilizando diseño responsivo para adaptarse correctamente a:
+# Diseño responsivo
 
-- Computadoras
-- Tablets
-- Celulares
+La página fue diseñada para adaptarse correctamente a:
+
+* Computadoras
+* Tablets
+* Celulares
+
+Utilizando CSS responsivo mediante `media queries`.
+
+---
+
+# Uso de getElementById()
+
+Toda la interacción con formularios y resultados fue desarrollada utilizando:
+
+```javascript
+document.getElementById()
+```
+
+Cumpliendo con las restricciones obligatorias del desafío.
 
 ---
 
 # Repositorio GitHub
 
+Agregar enlace del repositorio aquí:
+
 ```text
-https://github.com/TU-USUARIO/desafio-fibonacci-primos
+https://github.com/lunayamildylanbs-cell/SIMULACION-MATEMATICA---FIBO-Y-PRIMOS.git
 ```
 
 ---
 
-# Página Publicada
+# Página publicada
+
+Agregar enlace del sitio web aquí:
 
 ```text
-https://tu-proyecto.netlify.app
+https://lunayamildylanbs-cell.github.io/SIMULACION-MATEMATICA---FIBO-Y-PRIMOS/?authuser=0
 ```
 
 ---
 
 # Conclusión
 
-Este proyecto demuestra cómo las matemáticas pueden aplicarse a problemas reales mediante programación web.
+Este proyecto demuestra cómo las matemáticas pueden utilizarse para resolver problemas relacionados con ahorro progresivo, seguridad informática y análisis computacional.
 
-La combinación de Fibonacci y números primos permite comprender aplicaciones relacionadas con:
-
-- Seguridad informática
-- Crecimiento progresivo
-- Organización matemática
-- Algoritmos computacionales
-
-Además, el proyecto integra tecnologías modernas como HTML, CSS y JavaScript para crear una experiencia interactiva y visualmente atractiva.
+Además de aplicar conceptos matemáticos, el proyecto integra herramientas modernas de desarrollo web utilizando HTML, CSS y JavaScript para construir una experiencia visual e interactiva.
 
 ---
+
+
+# Licencia
+
+Proyecto desarrollado con fines educativos.
